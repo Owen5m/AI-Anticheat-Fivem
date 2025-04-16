@@ -1,19 +1,41 @@
-# FiveM Anti-Cheat Documentation
+# 🚨 FiveM Anti-Cheat System 🚨
 
-## Overview
+## **Overview**
 
-This FiveM anti-cheat system is designed to detect and prevent cheating by monitoring various suspicious activities on the server. It includes detection for abnormal AI behavior, DLL injection, external processes, CPU/RAM usage anomalies, and more. It also reacts aggressively by automatically banning cheaters and logging their activities.
+Welcome to the **FiveM Anti-Cheat System**, an advanced detection tool designed to keep your server safe from cheaters! This system actively monitors suspicious activities like **AI behavior anomalies**, **DLL injections**, and **external processes**, all while keeping resource usage in check.
 
----
-
-## Features
-
-- **AI Behavior Monitoring**: Detects abnormal mouse and camera movements (e.g., using cheats).
-- **External Process Detection**: Identifies suspicious external processes like cheat engines or hacks.
-- **DLL Injection Detection**: Detects when unauthorized DLLs are loaded into the game.
-- **CPU/RAM Usage Monitoring**: Tracks the system resource usage to identify excessive consumption by suspicious programs.
-- **Aggressive Auto-Banning**: Players are automatically banned if suspicious activity is detected.
-- **Admin Whitelist**: Allows admins to bypass anti-cheat checks.
+But that's not all — it’s **aggressive**! Once a cheat is detected, the system will **automatically ban** the offender and send detailed logs straight to your Discord channel. Whether you’re running a competitive server or just want a safer place for your players, this anti-cheat system has you covered!
 
 ---
 
+## **Key Features** 🌟
+
+- **AI Behavior Monitoring**: Detects unnatural mouse and camera movements. Cheating tools like aimbots will be spotted in no time.
+- **External Process Detection**: Flags suspicious external processes (cheat engines, hack tools).
+- **DLL Injection Detection**: Keeps track of unauthorized DLLs that might indicate cheating.
+- **CPU/RAM Usage Monitoring**: Identifies if a player’s machine is running suspiciously high CPU or RAM usage — a sign of possible cheats.
+- **Aggressive Auto-Banning**: No hesitation! Players caught cheating will be banned instantly.
+- **Admin Whitelist**: Prevents server admins from being flagged by accident, keeping them in control.
+
+---
+
+## **How It Works 🔧**
+
+This system continuously monitors players’ actions, looking for patterns and anomalies. It tracks:
+
+- **Mouse Movements**: If there are consistent, identical mouse movements or “silent clicks,” it may indicate that a cheat is in use (e.g., a triggerbot).
+- **Suspicious Processes**: If a cheat engine or similar tool is running in the background, this will be detected and flagged.
+- **System Resource Usage**: If a player’s CPU or RAM usage exceeds certain thresholds, it could mean that a cheat is actively consuming system resources.
+
+Once any suspicious activity is detected, the system **immediately logs the event** and, if set up, **bans** the player for good measure. 
+
+---
+
+## **Installation Guide 📦**
+
+1. **Clone or Download the Anti-Cheat System**
+2. **Place `client.lua`, `server.lua`, and `config.lua`** in the appropriate resources folder on your FiveM server.
+3. **Configure the `config.lua`** file to suit your server’s needs. Add your Discord Webhook, set tolerances, and manage your admin whitelist.
+4. **Start the Resource** in your server and let the system do its magic!
+
+---
